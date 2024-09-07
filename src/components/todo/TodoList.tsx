@@ -1,4 +1,5 @@
-import { TodoType } from "../App"
+
+import { TodoType } from "../Type/Type";
 import { Todo } from "./Todo"
 
 export const TodoList = ({todoList, updateIsComplete}:{todoList: TodoType[]; updateIsComplete: (todoId: string)=>void;}) => {

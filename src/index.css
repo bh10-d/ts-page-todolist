@@ -17,9 +17,13 @@ import '@fontsource/roboto/700.css'; */
 
 .main{
   height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.title-Main{
+  background-color: cadetblue;
 }
 
 .name{
