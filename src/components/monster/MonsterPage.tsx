@@ -1,7 +1,7 @@
 import { TextField } from "@mui/material"
 import { ChangeEvent, useEffect, useState } from "react"
 import { MonsterType } from "../Type/Type"
-import { MonsterList } from "./MonsterList"
+import { MonsterList } from "./MonsterList/MonsterList"
 
 
 export const MonsterPage = () => {
@@ -23,14 +23,14 @@ export const MonsterPage = () => {
   }
 
   return (
-    <div style={{ height: "100%", display: "flex", justifyContent:"center" }}>
-        <div>
-            <h1 style={{ fontFamily: "Bigelow Rules", fontSize: "72px", fontWeight: "700" }}>Monster Rolodex</h1>
-            <div style={{ marginLeft: "30px" }}>
-                <TextField size="small" onChange={onChangeText}/>
-                <MonsterList listMonster={filterMonster}/>
-            </div>
-        </div>
+    <div style={{ height: "100%", width: '100%' }}>
+      <div style={{ display: 'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center'}}>
+        <h1 style={{ fontFamily: "Bigelow Rules", fontSize: "72px", fontWeight: "700" }}>Monster Rolodex</h1>
+        <TextField size="small" fullWidth label="Type to find monster" id="fullWidth" onChange={onChangeText}/>
+      </div>
+      <div style={{height: '100%', width: '100%'}}>
+          <MonsterList listMonster={filterMonster}/>
+      </div>
     </div>
   )
 }
