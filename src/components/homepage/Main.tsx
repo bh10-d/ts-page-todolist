@@ -39,7 +39,7 @@ export const Main = () => {
     }
 
     return (
-        <div style={{ height: "90vh" }}>
+        <div style={{ height: "100vh" }}>
             <Header listTitle={listTitle} onClickNavigation={onClickNavigation} />
             {
                 listTitle[0].currentState ? <TodoPage /> : <MonsterPage />
